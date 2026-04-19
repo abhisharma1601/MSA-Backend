@@ -11,8 +11,8 @@ from typing import Optional
 from fastapi import Depends, FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
-from models import GenerateApiKeyRequest, PromptRequest
-from agent import run_agent_stream
+from app.models import GenerateApiKeyRequest, PromptRequest
+from app.agent import run_agent_stream
 
 
 # SQLite database
