@@ -33,7 +33,10 @@ app.add_middleware(
         "http://localhost:4200",
         "http://localhost:3000",
         "http://127.0.0.1:4200",
-        "http://127.0.0.1:3000"
+        "http://127.0.0.1:3000",
+        "http://34.197.110.168",
+        "https://34.197.110.168",
+        "http://34.197.110.168:80"
     ],
     allow_credentials=False,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
