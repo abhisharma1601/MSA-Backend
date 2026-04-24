@@ -20,8 +20,8 @@ def run_agent_stream(user_prompt: str, context_list: list = None):
     if context_list is None:
         context_list = []
 
-    gemini_model = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
-    gemini_api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+    gemini_model = "gemini-flash-latest"
+    gemini_api_key = "AIzaSyCv5lJxlteE5aRC9SnXUne18abzRpOray4"
 
     if not gemini_api_key:
         yield "Error: Missing GEMINI_API_KEY or GOOGLE_API_KEY environment variable"
